@@ -1,4 +1,8 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿$("#form").formcache({
+    key: $("#token").data("token"),
+    local: true,
+    maxAge: 86400
+});
 
-// Write your JavaScript code.
+var cache = $('form').formcache('serialize');
+//console.log(cache);

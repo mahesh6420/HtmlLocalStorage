@@ -20,5 +20,8 @@ namespace LocalStorage.Data
         }
         
         public DbSet<TestFormModel> TestForm { get; set; }
+        public DbSet<UserMasterModel> UserMaster { get; set; }
+        public DbSet<UserPhoneDetailModel> UserPhoneDetail { get; set; }
+
     }
 }
