@@ -1,0 +1,164 @@
+@model LocalStorage.Models.TestFormModel
+
+@{
+    ViewData["Title"] = ViewContext.RouteData.Values["action"];
+}
+
+<h1>Create</h1>
+
+<h4>TestFormModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" id="unlimited" class="submitForm">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MiddleName" class="control-label"></label>
+                <input asp-for="MiddleName" class="form-control" />
+                <span asp-validation-for="MiddleName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label"></label>
+                <input asp-for="Phone" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FatherFirstName" class="control-label"></label>
+                <input asp-for="FatherFirstName" class="form-control" />
+                <span asp-validation-for="FatherFirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FatherMiddleName" class="control-label"></label>
+                <input asp-for="FatherMiddleName" class="form-control" />
+                <span asp-validation-for="FatherMiddleName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FatherLastName" class="control-label"></label>
+                <input asp-for="FatherLastName" class="form-control" />
+                <span asp-validation-for="FatherLastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MotherFirstName" class="control-label"></label>
+                <input asp-for="MotherFirstName" class="form-control" />
+                <span asp-validation-for="MotherFirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MotherMiddleName" class="control-label"></label>
+                <input asp-for="MotherMiddleName" class="form-control" />
+                <span asp-validation-for="MotherMiddleName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MotherLastName" class="control-label"></label>
+                <input asp-for="MotherLastName" class="form-control" />
+                <span asp-validation-for="MotherLastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BirthPlace" class="control-label"></label>
+                <input asp-for="BirthPlace" class="form-control" />
+                <span asp-validation-for="BirthPlace" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FatherBirthPlace" class="control-label"></label>
+                <input asp-for="FatherBirthPlace" class="form-control" />
+                <span asp-validation-for="FatherBirthPlace" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MotherBirthPlace" class="control-label"></label>
+                <input asp-for="MotherBirthPlace" class="form-control" />
+                <span asp-validation-for="MotherBirthPlace" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FatherPhone" class="control-label"></label>
+                <input asp-for="FatherPhone" class="form-control" />
+                <span asp-validation-for="FatherPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MotherPhone" class="control-label"></label>
+                <input asp-for="MotherPhone" class="form-control" />
+                <span asp-validation-for="MotherPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SpouseFirstName" class="control-label"></label>
+                <input asp-for="SpouseFirstName" class="form-control" />
+                <span asp-validation-for="SpouseFirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SposeMiddleName" class="control-label"></label>
+                <input asp-for="SposeMiddleName" class="form-control" />
+                <span asp-validation-for="SposeMiddleName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SpouseLastName" class="control-label"></label>
+                <input asp-for="SpouseLastName" class="form-control" />
+                <span asp-validation-for="SpouseLastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SpusePhone" class="control-label"></label>
+                <input asp-for="SpusePhone" class="form-control" />
+                <span asp-validation-for="SpusePhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WorkPlace" class="control-label"></label>
+                <input asp-for="WorkPlace" class="form-control" />
+                <span asp-validation-for="WorkPlace" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WorkPlaceAddress" class="control-label"></label>
+                <input asp-for="WorkPlaceAddress" class="form-control" />
+                <span asp-validation-for="WorkPlaceAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BirthDate" class="control-label"></label>
+                <input asp-for="BirthDate" class="form-control" />
+                <span asp-validation-for="BirthDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FatherBirthDate" class="control-label"></label>
+                <input asp-for="FatherBirthDate" class="form-control" />
+                <span asp-validation-for="FatherBirthDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MotherBirthDate" class="control-label"></label>
+                <input asp-for="MotherBirthDate" class="form-control" />
+                <span asp-validation-for="MotherBirthDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SpouseBirthDate" class="control-label"></label>
+                <input asp-for="SpouseBirthDate" class="form-control" />
+                <span asp-validation-for="SpouseBirthDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SpouseBirthPlace" class="control-label"></label>
+                <input asp-for="SpouseBirthPlace" class="form-control" />
+                <span asp-validation-for="SpouseBirthPlace" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreatedBy" class="control-label"></label>
+                <select asp-for="CreatedBy" class ="form-control" asp-items="ViewBag.CreatedBy"></select>
+            </div>
+            <div class="form-group">
+                <input type="button" value="Create" id="submitButton" onclick="ClearCache('@Url.RouteUrl(ViewContext.RouteData.Values)')" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

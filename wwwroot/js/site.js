@@ -17,7 +17,18 @@ function ClearCache(key) {
 
 $("#age").formcache({
     session: false,
-    age: 20000
+    maxAge: 10
 });
 
 // Local Storage with Age
+
+// Local Storage with Unlimited Age
+
+$("#unlimited").formcache({
+    session: false
+});
+
+// Local Storage with Unlimited Age
+
+var a = $().formcache('getCaches');
+console.log(a);
