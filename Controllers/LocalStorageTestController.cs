@@ -11,7 +11,6 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace LocalStorage.Controllers
 {
-    [Authorize]
     public class LocalStorageTestController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -50,9 +49,18 @@ namespace LocalStorage.Controllers
         // GET: LocalStorageTest/Create
         public IActionResult Create()
         {
+            ViewBag.FormCacheKey = "0123456789";
+
             ViewData["CreatedBy"] = new SelectList(_context.Users, "Id", "Id");
             return View();
         }
+
+        public IActionResult Age()
+        {
+            ViewData["CreatedBy"] = new SelectList(_context.Users, "Id", "Id");
+            return View();
+        }
+
 
         // POST: LocalStorageTest/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
